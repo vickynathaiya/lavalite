@@ -1,0 +1,21 @@
+{
+    "name": "lavalite/team",
+    "description": "Team management package for Lavalite",
+    "keywords": ["lavalite", "roles"],
+    "license": "MIT",
+    "homepage": "https://github.com/Lavalite/Team",
+    "authors": [
+        {
+            "name": "Renfos Technologies Pvt. Ltd.",
+            "email": "info@renfos.com"
+        }
+    ],
+    "require": {
+        "mpociot/teamwork": "~5.1"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Lavalite\\Team\\": "" 
+        }
+    }
+}

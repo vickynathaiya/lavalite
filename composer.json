@@ -1,0 +1,73 @@
+{
+    "name": "lavalite/framework",
+    "description": "The lavalite framework",
+    "keywords": ["framework", "lavalite"],
+    "license": "MIT",
+    "homepage": "http://lavalite.org",
+    "authors": [
+        {
+            "name": "Renfos Technologies",
+            "email": "info@renfos.com"
+        },
+        {
+            "name": "George John",
+            "email": "george@renfos.com"
+        }
+    ],
+    "require": {
+        "anahkiasen/former": "~4.2",
+        "barryvdh/laravel-debugbar": "~3.2",
+        "hashids/hashids": "~3.0",
+        "intervention/imagecache": "~2.3",
+        "laravel/framework": "~5.8",
+        "laravel/socialite": "~4.1",
+        "laravel/tinker": "~1.0",
+        "league/fractal": "~0.17",
+        "mcamara/laravel-localization": "1.3.0",
+        "prettus/l5-repository": "~2.6",
+        "rachidlaasri/laravel-installer": "^4.0",
+        "spatie/laravel-activitylog": "~3.5"
+    },
+    "replace": {
+        "litepie/activities": "self.version",
+        "litepie/database": "self.version",
+        "litepie/filer": "self.version",
+        "litepie/form": "self.version",
+        "litepie/hashids": "self.version",
+        "litepie/install": "self.version",
+        "litepie/menu": "self.version",
+        "litepie/node": "self.version",
+        "litepie/repository": "self.version",
+        "litepie/roles": "self.version",
+        "litepie/settings": "self.version",
+        "litepie/team": "self.version",
+        "litepie/theme": "self.version",
+        "litepie/trans": "self.version",
+        "litepie/user": "self.version"
+    },
+    "autoload": {
+        "classmap": [
+            "src/Litepie/Menu/database/seeds",
+            "src/Litepie/Roles/database/seeds",
+            "src/Litepie/Settings/database/seeds",
+            "src/Litepie/User/database/seeds"
+        ],
+        "files": [
+            "src/Litepie/Foundation/helpers.php",
+            "src/Litepie/Settings/helpers.php",
+            "src/Litepie/Theme/helpers.php"
+        ],
+        "psr-4": {
+            "Litepie\\": "src/Litepie"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "rachidlaasri/laravel-installer",
+                "intervention/imagecache",
+                "spatie/laravel-backup"
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "litepie/roles",
+    "description": "Roles package for litepie.",
+    "keywords": ["lavalite", "Roles"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lavalite",
+            "email": "info@lavalite.org"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds"
+        ],
+        "psr-4": {
+            "Litepie\\Roles\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
